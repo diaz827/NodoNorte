@@ -20,9 +20,6 @@ La web tiene tres páginas:
 | `index.html` (Inicio) | Hero con el próximo evento, qué es Nodo Norte, botón de inscripción y preguntas frecuentes |
 | `eventos.html` (Eventos) | Próximos eventos con su nivel y plazas, calendario, ponentes y ediciones anteriores con fotos y diapositivas |
 | `unete.html` (Únete) | Formularios de inscripción a un evento, hacerse socio (cuota voluntaria de 10 €/año) y proponer una charla |
-| `inscripcionEvento.html` (Inscripción a eventos) | Formulario para apuntarse a un evento: nombre, correo, nivel y si viene por primera vez |
-| `hacerseSocio.html` (Unirse como socio) | Formulario para hacerse socio: datos personales, forma de pago (transferencia o PayPal) y cuota voluntaria de 10 €/año |
-| `proponerCharla.html` (Proponer una charla) | Formulario para presentarse como ponente: tema, nivel, tipo (charla, obradoiro o taller), duración y descripción |
 
 ## Scrum
 
