@@ -73,5 +73,5 @@ NodoNorte/
 Clona el repositorio y abre `index.html` en el navegador:
 
 ```bash
-git clone [ENLACE AL REPOSITORIO]
+git clone https://github.com/diaz827/NodoNorte
 ```
