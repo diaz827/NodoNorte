@@ -6,7 +6,7 @@ Web de **Nodo Norte**, una comunidad tecnológica sin ánimo de lucro de estudia
 
 ## Autores
 
-- **Fran Puñal** · GitHub: [@superfurry-tech](https://github.com/superfurry-tech)
+- **Francisco Puñal** · GitHub: [@superfurry-tech](https://github.com/superfurry-tech)
 - **Daniel Díaz** · GitHub: [@diaz827](https://github.com/diaz827)
 
 ## Objetivo de la web
@@ -24,12 +24,12 @@ La web tiene tres páginas:
 ## Scrum
 
 - **Product Owner y cliente:** Mónica Pérez Sueiro
-- **Developers:** Fran Puñal y Daniel Díaz
+- **Developers:** Francisco Puñal y Daniel Díaz
 
 | Sprint | Scrum Master | Sprint Goal |
 |---|---|---|
-| Sprint 1 | Fran Puñal y Daniel Díaz | Diseño aprobado por el cliente (wireframes, moodboard y guía de estilos) y plantilla base en Bootstrap con navbar y footer en las tres páginas, subida a main. |
-| Sprint 2 | Fran Puñal y Daniel Díaz | Web completa de Nodo Norte, con las tres páginas, los formularios y los componentes, validada, responsive y accesible, lista para entregar. |
+| Sprint 1 | Francisco Puñal y Daniel Díaz | Diseño aprobado por el cliente (wireframes, moodboard y guía de estilos) y plantilla base en Bootstrap con navbar y footer en las tres páginas, subida a main. |
+| Sprint 2 | Francisco Puñal y Daniel Díaz | Web completa de Nodo Norte, con las tres páginas, los formularios y los componentes, validada, responsive y accesible, lista para entregar. |
 
 **Tablero del proyecto (GitHub Projects):** [\[https://github.com/diaz827/NodoNorte\]](https://github.com/diaz827/NodoNorte)
 
