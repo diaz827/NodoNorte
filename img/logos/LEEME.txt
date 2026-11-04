@@ -1,0 +1,8 @@
+Nodo Norte · paquete de logo (Estrella polar), fondo transparente
+- completo/: icono + nombre apilado ("nodo" sobre "norte"), todo en turquesa, sin lema.
+- solo-icono/: solo la estrella polar (tambien sirve de favicon / avatar).
+- solo-nombre/: solo "nodo / norte".
+- claro = para fondos claros. oscuro = para fondos oscuros.
+- svg (vectorial, escala sin perder calidad) y carpeta png/ con reducciones (el numero es el ancho en px).
+- Fuente: Nunito Sans 900 (texto convertido a trazados, no hace falta instalarla).
+Colores: #0E7490, #FB7185, #ECFEFF (fondo oscuro: #1F2937)
