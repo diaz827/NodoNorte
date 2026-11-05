@@ -1,0 +1,21 @@
+:root {
+    /* Colores */
+    --color-principal: #0E7490;
+    --color-fondo: #ECFEFF;
+    --color-acento: #FB7185;
+    --color-texto: #1F2937;
+    --color-gris-claro: #F1F5F9;
+
+    /* Tipografía */
+    --fuente-principal: 'Nunito Sans', sans-serif;
+}
+
+header {
+    background-color: var(--color-principal);
+}
+
+body {
+    font-family: var(--fuente-principal);
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
