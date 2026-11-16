@@ -52,3 +52,36 @@ h1, h2, h3 {
 .tarjeta-hero {
     max-width: 32rem;
 }
+
+.btn-acento {
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    border: 2px solid var(--color-acento);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn-acento:hover {
+    background-color: #F9617A;
+    border-color: #F9617A;
+    color: var(--color-texto);
+}
+
+.btn-borde {
+    background-color: transparent;
+    color: var(--color-principal);
+    border: 2px solid var(--color-principal);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn-borde:hover {
+    background-color: var(--color-principal);
+    color: #fff;
+}
+
+.tarjeta-evento {
+    border: 2px solid var(--color-principal);
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(14, 116, 144, 0.2);
+}
