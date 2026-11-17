@@ -20,7 +20,9 @@ body {
     background-color: var(--color-fondo);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 800;
     color: var(--color-principal);
 }
@@ -53,20 +55,6 @@ h1, h2, h3 {
     max-width: 32rem;
 }
 
-.btn-acento {
-    background-color: var(--color-acento);
-    color: var(--color-texto);
-    border: 2px solid var(--color-acento);
-    border-radius: 10px;
-    font-weight: 700;
-}
-
-.btn-acento:hover {
-    background-color: #F9617A;
-    border-color: #F9617A;
-    color: var(--color-texto);
-}
-
 .btn-borde {
     background-color: transparent;
     color: var(--color-principal);
@@ -78,6 +66,20 @@ h1, h2, h3 {
 .btn-borde:hover {
     background-color: var(--color-principal);
     color: #fff;
+}
+
+.btn-acento {
+    background-color: transparent;
+    color: var(--color-texto);
+    border: 2px solid var(--color-acento);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn-acento:hover {
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+    color: var(--color-texto);
 }
 
 .tarjeta-evento {
@@ -100,4 +102,20 @@ h1, h2, h3 {
 
 .accordion-button {
     font-weight: 700;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 0.25rem #FFE4E8;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-principal);
+    border-color: var(--color-principal);
+}
+
+.form-check-input:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 0.25rem #FFE4E8;
 }
