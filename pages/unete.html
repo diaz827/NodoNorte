@@ -42,9 +42,10 @@
                                 Comparte lo que sabes: propón una charla, un obradoiro o un taller y forma parte del
                                 programa de eventos.
                             </p>
-                            <a href="proponer-charla.html" class="btn btn-borde mt-auto">
+                            <button type="button" class="btn btn-borde mt-auto" data-bs-toggle="modal"
+                                data-bs-target="#modalPonente">
                                 <i class="bi bi-megaphone me-2" aria-hidden="true"></i>Formulario ponente
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -117,6 +118,74 @@
                 <footer class="modal-footer">
                     <button type="button" class="btn btn-borde" data-bs-dismiss="modal">Cancelar</button>
                     <button type="submit" class="btn btn-acento">Hacerme socio/a</button>
+                </footer>
+            </form>
+        </div>
+    </div>
+    <div class="modal fade" id="modalPonente" tabindex="-1" aria-labelledby="tituloPonente" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <form class="modal-content" id="formPonente" novalidate>
+                <header class="modal-header">
+                    <h2 class="modal-title h4" id="tituloPonente">Conviértete en ponente</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </header>
+                <div class="modal-body">
+                    <p>
+                        Cuéntanos qué te gustaría compartir con la comunidad. Revisaremos tu propuesta y te
+                        escribiremos.
+                    </p>
+                    <div class="mb-3">
+                        <label for="temaPonente" class="form-label">Tema</label>
+                        <input type="text" class="form-control" id="temaPonente" name="tema"
+                            placeholder="Ej.: Introducción a Docker" required>
+                        <span class="invalid-feedback">Escribe el tema de tu propuesta.</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nivelPonente" class="form-label">Nivel</label>
+                        <select class="form-select" id="nivelPonente" name="nivel" required>
+                            <option value="" selected disabled>Elige un nivel</option>
+                            <option value="inicial">Inicial</option>
+                            <option value="medio">Medio</option>
+                            <option value="avanzado">Avanzado</option>
+                        </select>
+                        <span class="invalid-feedback">Elige un nivel.</span>
+                    </div>
+                    <fieldset class="mb-3">
+                        <legend class="form-label fs-6">Tipo</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo" id="tipoCharla" value="charla"
+                                required>
+                            <label class="form-check-label" for="tipoCharla">Charla</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo" id="tipoObradoiro"
+                                value="obradoiro" required>
+                            <label class="form-check-label" for="tipoObradoiro">Obradoiro</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo" id="tipoTaller" value="taller"
+                                required>
+                            <label class="form-check-label" for="tipoTaller">Taller</label>
+                            <span class="invalid-feedback">Elige el tipo de propuesta.</span>
+                        </div>
+                    </fieldset>
+                    <div class="mb-3">
+                        <label for="duracionPonente" class="form-label">Duración aproximada (en minutos)</label>
+                        <input type="number" class="form-control" id="duracionPonente" name="duracion" min="10"
+                            max="240" inputmode="numeric" placeholder="Ej.: 45" required>
+                        <span class="invalid-feedback">Escribe la duración en minutos, entre 10 y 240.</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="descripcionPonente" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="descripcionPonente" name="descripcion" rows="4"
+                            minlength="20" maxlength="500"
+                            placeholder="Ej.: De qué va, a quién va dirigido y qué se aprenderá" required></textarea>
+                        <span class="invalid-feedback">Escribe una descripción de entre 20 y 500 caracteres.</span>
+                    </div>
+                </div>
+                <footer class="modal-footer">
+                    <button type="button" class="btn btn-borde" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-acento">Enviar propuesta</button>
                 </footer>
             </form>
         </div>
