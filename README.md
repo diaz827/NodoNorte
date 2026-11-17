@@ -46,16 +46,23 @@ Que un estudiante de FP o universidad, de 16 a 35 años, entre en la web desde e
 
 ## Páginas de la web
 
-La web tiene tres páginas principales y tres páginas de formulario.
+La web tiene tres páginas. Los formularios no son páginas aparte: se abren como ventanas (modales de Bootstrap) en la misma página donde está su botón, y se validan con JavaScript.
 
 | Página | Archivo | Contenido |
 |---|---|---|
-| Inicio | `index.html` | Hero con el próximo evento, qué es Nodo Norte, botón de inscripción y preguntas frecuentes |
-| Eventos | `eventos.html` | Próximo evento, calendario, ponentes y ediciones anteriores con fotos y diapositivas |
-| Únete | `unete.html` | Tarjetas para apuntarse a un evento, hacerse socio o proponer una charla, con enlace a cada formulario |
-| Inscripción a eventos | `inscripcion-evento.html` | Nombre, correo, nivel y si es la primera vez que viene |
-| Hacerse socio | `hacerse-socio.html` | Datos personales y forma de pago (transferencia o PayPal). Cuota voluntaria de 10 €/año, con plaza asegurada en los talleres |
-| Proponer una charla | `proponer-charla.html` | Tema, nivel, tipo (charla, obradoiro o taller), duración y descripción |
+| Inicio | `index.html` | Hero «Sobre nosotros», próximo evento, preguntas frecuentes (acordeón) y formulario de inscripción al evento |
+| Eventos | `pages/eventos.html` | Próximo evento, calendario, ponentes y ediciones anteriores con fotos y diapositivas |
+| Únete | `pages/unete.html` | Tarjetas para hacerse socio o proponer una charla, con un formulario para cada una |
+
+### Formularios
+
+| Formulario | Dónde se abre | Campos |
+|---|---|---|
+| Inscripción a eventos | Inicio y Eventos | Nombre, correo, nivel y si es la primera vez que viene |
+| Hacerse socio | Únete | Nombre, apellidos, edad, fecha de nacimiento, DNI, correo y forma de pago (transferencia o PayPal). Cuota voluntaria de 10 €/año, con plaza asegurada en los talleres |
+| Proponer una charla | Únete | Tema, nivel, tipo (charla, obradoiro o taller), duración en minutos y descripción |
+
+Todos validan los campos al enviar y, si están bien, muestran un aviso de «Enviado». Los datos no se mandan a ningún servidor: el envío está simulado.
 
 ## Eventos
 
@@ -168,18 +175,18 @@ Estructura final de la entrega:
 ```
 NodoNorte/
 ├── index.html
-├── eventos.html
-├── unete.html
-├── inscripcion-evento.html
-├── hacerse-socio.html
-├── proponer-charla.html
+├── pages/
+│   ├── eventos.html
+│   └── unete.html
 ├── css/
-│   └── estilos.css          CSS propio, solo lo que Bootstrap no cubre, comentado
+│   └── estilos.css          CSS propio, solo lo que Bootstrap no cubre
 ├── js/
-│   └── validacion.js        validación de Bootstrap de los formularios
+│   └── validacion.js        validación de los formularios y aviso de envío
 ├── img/
+│   ├── hero/                imágenes del hero de Inicio (escritorio y móvil)
 │   ├── logos/               logo Estrella polar (SVG y PNG)
-│   └── tarjetas/            tarjetas de los eventos
+│   ├── tarjetas/            tarjetas de los eventos
+│   └── unete/               imágenes de las tarjetas de Únete
 ├── docs/
 │   ├── fichasPracticas/     fichas de la práctica
 │   ├── guias-estilos/       guía de estilo web y guía del logo
@@ -195,9 +202,9 @@ NodoNorte/
 |---|---|
 | HTML5 | Estructura semántica: `header`, `nav`, `main`, `section` y `footer` |
 | CSS3 | Estilos propios en `css/estilos.css` |
-| Bootstrap 5.3 (CDN oficial) | Rejilla responsive y componentes: navbar, cards, acordeón, modal, formularios y tablas |
+| Bootstrap 5.3 (CDN oficial) | Rejilla responsive y componentes: navbar, cards, acordeón, modales, toasts, formularios y botones |
 | Bootstrap Icons | Iconos |
-| JavaScript | Validación de los formularios en `js/validacion.js` |
+| JavaScript | Validación de los formularios y aviso de envío en `js/validacion.js` |
 | Git y GitHub | Control de versiones |
 | GitHub Projects | Tablero Scrum (Por hacer, En curso, Hecho) |
 
@@ -208,8 +215,9 @@ NodoNorte/
 - [x] Guía de estilo y guía del logo
 - [x] Logo definitivo
 - [x] Tarjetas de los eventos
-- [ ] Páginas HTML con Bootstrap
-- [ ] Formularios con validación
+- [x] Páginas de Inicio y Únete con Bootstrap
+- [x] Formularios con validación
+- [ ] Página de Eventos, navbar y footer
 - [ ] Validación W3C, responsive y accesibilidad
 
 ## Cómo ver el proyecto
