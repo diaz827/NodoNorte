@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Únete | Nodo Norte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <h1 class="mb-4">Hazte socio y ponente</h1>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 p-3">
+                            <img src="../img/unete/imagenSocio.webp" class="img-fluid rounded-3 mb-3"
+                                alt="Jóvenes conversando en un espacio de coworking, con un portátil en primer plano">
+                            <h2 class="h3 card-title">Hazte socio</h2>
+                            <p class="card-text">
+                                Forma parte de la comunidad por solo 10 € al año. Tendrás plaza asegurada en los
+                                talleres y aviso con plazo antes de que se liberen las plazas.
+                            </p>
+                            <button type="button" class="btn btn-borde mt-auto" data-bs-toggle="modal"
+                                data-bs-target="#modalSocio">
+                                <i class="bi bi-people me-2" aria-hidden="true"></i>Formulario socio
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 p-3">
+                            <img src="../img/unete/imagenPonente.webp" class="img-fluid rounded-3 mb-3"
+                                alt="Micrófono sobre una mesa en una sala de charlas, con una pantalla de código al fondo">
+                            <h2 class="h3 card-title">Conviértete en ponente</h2>
+                            <p class="card-text">
+                                Comparte lo que sabes: propón una charla, un obradoiro o un taller y forma parte del
+                                programa de eventos.
+                            </p>
+                            <button type="button" class="btn btn-borde mt-auto" data-bs-toggle="modal"
+                                data-bs-target="#modalPonente">
+                                <i class="bi bi-megaphone me-2" aria-hidden="true"></i>Formulario ponente
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal fade" id="modalSocio" tabindex="-1" aria-labelledby="tituloSocio" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <form class="modal-content" id="formSocio" novalidate>
+                <header class="modal-header">
+                    <h2 class="modal-title h4" id="tituloSocio">Hazte socio</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </header>
+                <div class="modal-body">
+                    <p>
+                        La cuota es voluntaria: 10 € al año. Los socios tienen plaza asegurada en los talleres y
+                        aviso con plazo antes de que se liberen las plazas.
+                    </p>
+                    <div class="mb-3">
+                        <label for="nombreSocio" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombreSocio" name="nombre" autocomplete="given-name"
+                            placeholder="Ej.: Lucía" required>
+                        <span class="invalid-feedback">Escribe tu nombre.</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellidosSocio" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidosSocio" name="apellidos"
+                            autocomplete="family-name" placeholder="Ej.: Varela Pérez" required>
+                        <span class="invalid-feedback">Escribe tus apellidos.</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="edadSocio" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="edadSocio" name="edad" min="16" max="99"
+                            inputmode="numeric" placeholder="Ej.: 22" required>
+                        <span class="invalid-feedback">Escribe una edad entre 16 y 99 años.</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nacimientoSocio" class="form-label">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="nacimientoSocio" name="nacimiento"
+                            autocomplete="bday" required>
+                        <span class="invalid-feedback">Indica tu fecha de nacimiento.</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dniSocio" class="form-label">DNI</label>
+                        <input type="text" class="form-control" id="dniSocio" name="dni" maxlength="9"
+                            pattern="[0-9]{8}[A-Za-z]" autocomplete="off" placeholder="Ej.: 12345678A" required>
+                        <span class="invalid-feedback">Escribe un DNI válido: 8 números y una letra.</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correoSocio" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correoSocio" name="correo" autocomplete="email"
+                            placeholder="nombre@correo.com" required>
+                        <span class="invalid-feedback">Escribe un correo válido, por ejemplo nombre@correo.com.</span>
+                    </div>
+                    <fieldset>
+                        <legend class="form-label fs-6">Forma de pago</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pago" id="pagoTransferencia"
+                                value="transferencia" required>
+                            <label class="form-check-label" for="pagoTransferencia">Transferencia</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pago" id="pagoPaypal" value="paypal"
+                                required>
+                            <label class="form-check-label" for="pagoPaypal">PayPal</label>
+                            <span class="invalid-feedback">Elige una forma de pago.</span>
+                        </div>
+                    </fieldset>
+                </div>
+                <footer class="modal-footer">
+                    <button type="button" class="btn btn-borde" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-acento">Hacerme socio/a</button>
+                </footer>
+            </form>
+        </div>
+    </div>
+    <div class="modal fade" id="modalPonente" tabindex="-1" aria-labelledby="tituloPonente" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <form class="modal-content" id="formPonente" novalidate>
+                <header class="modal-header">
+                    <h2 class="modal-title h4" id="tituloPonente">Conviértete en ponente</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </header>
+                <div class="modal-body">
+                    <p>
+                        Cuéntanos qué te gustaría compartir con la comunidad. Revisaremos tu propuesta y te
+                        escribiremos.
+                    </p>
+                    <div class="mb-3">
+                        <label for="temaPonente" class="form-label">Tema</label>
+                        <input type="text" class="form-control" id="temaPonente" name="tema"
+                            placeholder="Ej.: Introducción a Docker" required>
+                        <span class="invalid-feedback">Escribe el tema de tu propuesta.</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nivelPonente" class="form-label">Nivel</label>
+                        <select class="form-select" id="nivelPonente" name="nivel" required>
+                            <option value="" selected disabled>Elige un nivel</option>
+                            <option value="inicial">Inicial</option>
+                            <option value="medio">Medio</option>
+                            <option value="avanzado">Avanzado</option>
+                        </select>
+                        <span class="invalid-feedback">Elige un nivel.</span>
+                    </div>
+                    <fieldset class="mb-3">
+                        <legend class="form-label fs-6">Tipo</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo" id="tipoCharla" value="charla"
+                                required>
+                            <label class="form-check-label" for="tipoCharla">Charla</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo" id="tipoObradoiro"
+                                value="obradoiro" required>
+                            <label class="form-check-label" for="tipoObradoiro">Obradoiro</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo" id="tipoTaller" value="taller"
+                                required>
+                            <label class="form-check-label" for="tipoTaller">Taller</label>
+                            <span class="invalid-feedback">Elige el tipo de propuesta.</span>
+                        </div>
+                    </fieldset>
+                    <div class="mb-3">
+                        <label for="duracionPonente" class="form-label">Duración aproximada (en minutos)</label>
+                        <input type="number" class="form-control" id="duracionPonente" name="duracion" min="10"
+                            max="240" inputmode="numeric" placeholder="Ej.: 45" required>
+                        <span class="invalid-feedback">Escribe la duración en minutos, entre 10 y 240.</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="descripcionPonente" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="descripcionPonente" name="descripcion" rows="4"
+                            minlength="20" maxlength="500"
+                            placeholder="Ej.: De qué va, a quién va dirigido y qué se aprenderá" required></textarea>
+                        <span class="invalid-feedback">Escribe una descripción de entre 20 y 500 caracteres.</span>
+                    </div>
+                </div>
+                <footer class="modal-footer">
+                    <button type="button" class="btn btn-borde" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-acento">Enviar propuesta</button>
+                </footer>
+            </form>
+        </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="avisoEnvio" class="toast" role="status" aria-live="polite" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">¡Enviado!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+            </div>
+            <div class="toast-body">
+                Hemos recibido tu solicitud. ¡Gracias por formar parte de Nodo Norte!
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/validacion.js"></script>
+</body>
+
+</html>

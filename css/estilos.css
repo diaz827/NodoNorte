@@ -92,3 +92,118 @@ header nav .enlace-unete:hover {
 .red-social:hover {
     filter: drop-shadow(0 0 5px rgb(255 255 255 / 75%));
 }
+
+h1,
+h2,
+h3 {
+    font-weight: 800;
+    color: var(--color-principal);
+}
+
+.hero {
+    background-image: url("../img/hero/imagenHeroMovil.webp");
+    background-size: cover;
+    background-position: center top;
+    min-height: 80vh;
+}
+
+@media (min-width: 992px) {
+    .hero {
+        background-image: url("../img/hero/imagenHero.webp");
+        background-position: center right;
+        min-height: 70vh;
+    }
+}
+
+.card {
+    border: 0;
+    border-radius: 14px;
+}
+
+.card-title {
+    font-weight: 800;
+    color: var(--color-principal);
+}
+
+.tarjeta-hero {
+    max-width: 32rem;
+}
+
+.btn-borde {
+    background-color: transparent;
+    color: var(--color-principal);
+    border: 2px solid var(--color-principal);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn-borde:hover {
+    background-color: var(--color-principal);
+    color: #fff;
+}
+
+.btn-acento {
+    background-color: transparent;
+    color: var(--color-texto);
+    border: 2px solid var(--color-acento);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn-acento:hover {
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+    color: var(--color-texto);
+}
+
+.tarjeta-evento {
+    border: 2px solid var(--color-principal);
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(14, 116, 144, 0.2);
+}
+
+.seccion-alterna {
+    background-color: var(--color-gris-claro);
+}
+
+.accordion {
+    --bs-accordion-btn-color: var(--color-texto);
+    --bs-accordion-active-color: var(--color-principal);
+    --bs-accordion-active-bg: var(--color-fondo);
+    --bs-accordion-btn-focus-border-color: var(--color-principal);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #FFE4E8;
+}
+
+.accordion-button {
+    font-weight: 700;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 0.25rem #FFE4E8;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-principal);
+    border-color: var(--color-principal);
+}
+
+.form-check-input:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 0.25rem #FFE4E8;
+}
+
+.modal-header {
+    background-color: transparent;
+}
+
+.modal-title {
+    font-weight: 800;
+    color: var(--color-principal);
+}
+
+.toast {
+    border: 2px solid var(--color-principal);
+    border-radius: 14px;
+}
