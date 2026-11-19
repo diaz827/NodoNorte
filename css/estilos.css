@@ -10,12 +10,85 @@
     --fuente-principal: 'Nunito Sans', sans-serif;
 }
 
-header {
+/* Aplica los colores solo al header y footer principales,
+   sin afectar a los que están dentro del formulario modal. */
+body>header,
+body>footer {
     background-color: var(--color-principal);
+    color: white;
+}
+
+/* Logo más pequeño en el footer */
+footer .marca img {
+    width: 8rem;
 }
 
 body {
     font-family: var(--fuente-principal);
     color: var(--color-texto);
     background-color: var(--color-fondo);
+}
+
+/* width establece su tamaño y max-width evita que supere el ancho de su contenedor */
+.marca img {
+    width: 11.25rem;
+    max-width: 100%;
+    height: auto;
+    /* Suaviza la aparición del brillo */
+    transition: filter 0.2s ease;
+}
+
+
+/* Resalta la silueta del logo con un brillo blanco suave */
+.marca:hover img {
+    filter: drop-shadow(0 0 4px rgb(255 255 255 / 45%));
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+header nav .enlace-unete {
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 0.625rem;
+    /* Suaviza el cambio de fondo y texto durante 0,2 segundos */
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* La línea empieza con ancho 0% y crece hasta 100% en 0,2 segundos */
+header nav a:not(.enlace-unete) {
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 2px;
+    padding-bottom: 0.25rem;
+    transition: background-size 0.2s ease;
+}
+
+/* :not(.enlace-unete) excluye el botón «Únete».
+  :hover se activa al pasar el ratón */
+header nav a:not(.enlace-unete):hover {
+    background-size: 100% 2px;
+}
+
+/* rellenar de blanco y cambiar el texto a turquesa*/
+header nav .enlace-unete:hover {
+    background-color: white;
+    color: var(--color-principal);
+}
+
+/* Enlaces de redes sin fondo ni subrayado */
+.red-social {
+    color: white;
+    text-decoration: none;
+    transition: filter 0.2s ease;
+}
+
+/* Brillo discreto al pasar el ratón */
+.red-social:hover {
+    filter: drop-shadow(0 0 5px rgb(255 255 255 / 75%));
 }

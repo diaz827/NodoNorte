@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nodo Norte</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap: estilos, distribución responsive y componentes -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons: biblioteca de iconos, incluidas redes sociales -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <a href="index.html" class="marca">
-                <img src="img/logos/completo/logo-completo-oscuro.svg" alt="Nodo Norte - Comunidad tecnológica">
-            </a>
-        </div>
+    <!-- El header ocupa todo el ancho y organiza directamente el logo y el menú.
+         flex-column los coloca en columna; flex-sm-row, en fila desde sm (576px).
+         justify-content-between los separa a ambos lados cuando están en fila.
+         gap-3 los separa 1rem y align-items-center los centra en el eje transversal.
+         px-3 añade 1rem de espacio interior lateral; px-sm-5 lo amplía a 3rem desde sm.
+         py-3 añade 1rem de espacio interior arriba y abajo. -->
+    <header
+        class="container-fluid d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 px-3 px-sm-5 py-3">
+        <a href="index.html" class="marca">
+            <img src="img/logos/completo/logo-completo-oscuro.svg" alt="Nodo Norte - Comunidad tecnológica">
+        </a>
 
-        <nav>
+        <!-- Enlaces en fila, separados por 1rem (gap-3) y centrados verticalmente. -->
+        <nav class="d-flex gap-3 align-items-center">
             <a href="index.html">Inicio</a>
             <a href="eventos.html">Eventos</a>
-            <a href="unete.html">Únete</a>
+            <a href="unete.html" class="enlace-unete">Únete</a>
         </nav>
     </header>
 
@@ -30,8 +40,54 @@
         <p>Charlas y talleres sobre tecnología.</p>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Nodo Norte. All rights reserved.</p>
+    <!-- d-flex activa la distribución flexible.
+     flex-column coloca los bloques en columna en pantallas menores de 576px.
+     flex-sm-row los coloca en fila desde 576px.
+     gap-3: deja 1rem entre bloques.
+     px-3: espacio interior lateral de 1rem.
+     px-sm-5: desde 576px, el espacio lateral pasa a 3rem.
+     py-4: espacio interior de 1.5rem arriba y abajo. -->
+    <footer
+        class="container-fluid d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 px-3 px-sm-5 py-4">
+        <!-- Agrupa el logo y la autoría.
+     mb-0 elimina el margen inferior del párrafo. -->
+        <p class="mb-0">
+            <a href="index.html" class="marca">
+                <img src="img/logos/completo/logo-completo-oscuro.svg" alt="Nodo Norte - Comunidad tecnológica">
+            </a>
+            <!-- d-block coloca la autoría debajo del logo.
+     mt-2 añade una separación superior de 0.5rem. -->
+            <span class="d-block mt-2 fw-semibold">&copy; 2026
+                <a href="https://www.linkedin.com/in/danidiazcanosa/" target="_blank" rel="noopener noreferrer"
+                    class="link-light fw-bold link-underline-opacity-0 link-underline-opacity-100-hover">Dani</a>
+                &amp;
+                <a href="https://www.linkedin.com/in/francisco-punal/" target="_blank" rel="noopener noreferrer"
+                    class="link-light fw-bold link-underline-opacity-0 link-underline-opacity-100-hover">Fran</a>
+            </span>
+        </p>
+        <!-- mb-0: quita el margen debajo del lema. -->
+        <p class="mb-0 fs-5 fw-semibold">
+            Conecta, aprende y comparte tecnología.</p>
+        <!-- Redes y correo: enlaces provisionales con href="#".
+     d-flex coloca los iconos en fila y gap-3 los separa 1rem.
+     fs-3 establece su tamaño y las clases bi muestran cada icono.
+     aria-label da nombre al enlace.
+     aria-hidden evita que el lector de pantalla anuncie también el icono. -->
+        <nav class="d-flex gap-3 fs-3">
+            <a href="#" class="red-social" aria-label="Mastodon">
+                <span class="bi bi-mastodon" aria-hidden="true"></span>
+            </a>
+            <a href="#" class="red-social" aria-label="Bluesky">
+                <span class="bi bi-bluesky" aria-hidden="true"></span>
+            </a>
+            <a href="#" class="red-social" aria-label="Instagram">
+                <span class="bi bi-instagram" aria-hidden="true"></span>
+            </a>
+            <a href="#" class="red-social" aria-label="Correo electrónico">
+                <span class="bi bi-envelope" aria-hidden="true"></span>
+            </a>
+        </nav>
+    </footer>
 
 </body>
 
