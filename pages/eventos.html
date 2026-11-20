@@ -34,10 +34,60 @@
             <a href="unete.html" class="enlace-unete">Únete</a>
         </nav>
     </header>
-    <!-- Ocupa el espacio disponible y empuja el footer hacia el final de la ventana. -->
-    <!-- Pendiente: contenido de la página de Eventos -->
+
+
+
+
+    <!-- Hace crecer el main para que el footer quede abajo cuando hay poco contenido. -->
     <main class="flex-grow-1">
+        <!-- Próximo evento: contenido centrado y espacio vertical -->
+        <section class="container py-5">
+            <h1 class="mb-4">Próximo evento</h1>
+            <!-- img-fluid adapta la imagen al ancho disponible;
+     tarjeta-evento aplica el borde, las esquinas y la sombra. -->
+            <img src="../img/tarjetas/diciembre_1_panoramica.png" class="img-fluid tarjeta-evento imagen-proximo-evento"
+                alt="Git sin miedo: tu primer pull request, 1 de diciembre de 2026 a las 18:30 en la Universidad">
+            <!-- Información y botón: apilados en móvil y en dos columnas desde lg (992px).
+     align-items-center centra el botón verticalmente.
+     g-4 separa las columnas y mt-4 añade margen sobre el bloque. -->
+            <article class="row align-items-center g-4 mt-4">
+                <header class="col-lg-9">
+                    <h2>Git sin miedo: tu primer pull request</h2>
+
+                    <p>
+                        Una charla práctica para perder el miedo a Git y aprender
+                        a colaborar en proyectos de software libre. Lucía Varela,
+                        desarrolladora de software libre, te guiará para dar tus
+                        primeros pasos y preparar tu primer pull request.
+                    </p>
+
+                    <p class="mb-0 fw-semibold">
+                        Martes 1 de diciembre de 2026 · 18:30 h · Universidad
+                    </p>
+                </header>
+
+                <p class="col-lg-3 mb-0">
+                    <button type="button" class="btn btn-acento w-100" data-bs-toggle="modal"
+                        data-bs-target="#modalInscripcion">
+                        Formulario evento
+                    </button>
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Eventos anteriores sobre el fondo alternativo -->
+        <section class="seccion-alterna py-5">
+            <h2 class="container mb-4">Eventos anteriores</h2>
+        </section>
     </main>
+
+
+
+
+
+
+
     <!-- d-flex activa la distribución flexible.
      flex-column coloca los bloques en columna en pantallas menores de 576px.
      flex-sm-row los coloca en fila desde 576px.
@@ -86,6 +136,53 @@
             </a>
         </nav>
     </footer>
+
+    <div class="modal fade" id="modalInscripcion" tabindex="-1" aria-labelledby="tituloInscripcion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <form class="modal-content" id="formInscripcion" novalidate>
+                <header class="modal-header">
+                    <h2 class="modal-title h4" id="tituloInscripcion">Inscripción al evento</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </header>
+                <div class="modal-body">
+                    <p>
+                        Git sin miedo: tu primer pull request, el martes 1 de diciembre. Después del evento hay
+                        networking con comida y bebida.
+                    </p>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="name"
+                            placeholder="Ej.: Lucía Varela" required>
+                        <span class="invalid-feedback">Escribe tu nombre.</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" name="correo" autocomplete="email"
+                            placeholder="nombre@correo.com" required>
+                        <span class="invalid-feedback">Escribe un correo válido, por ejemplo nombre@correo.com.</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nivel" class="form-label">Tu nivel</label>
+                        <select class="form-select" id="nivel" name="nivel" required>
+                            <option value="" selected disabled>Elige tu nivel</option>
+                            <option value="inicial">Inicial</option>
+                            <option value="medio">Medio</option>
+                            <option value="avanzado">Avanzado</option>
+                        </select>
+                        <span class="invalid-feedback">Elige un nivel.</span>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="primeraVez" name="primeraVez">
+                        <label class="form-check-label" for="primeraVez">Es la primera vez que vengo</label>
+                    </div>
+                </div>
+                <footer class="modal-footer">
+                    <button type="button" class="btn btn-borde" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-acento">Inscribirme</button>
+                </footer>
+            </form>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>

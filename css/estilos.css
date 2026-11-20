@@ -207,3 +207,16 @@ h3 {
     border: 2px solid var(--color-principal);
     border-radius: 14px;
 }
+
+/* ===== Página de Eventos ===== */
+
+/* Limita y centra el bloque completo del próximo evento */
+
+
+/* La imagen ocupa el ancho del bloque */
+.imagen-proximo-evento {
+    display: block;
+    width: 100%;
+}
+
+/* ===== Fin de estilos de Eventos ===== */
