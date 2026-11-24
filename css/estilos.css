@@ -210,9 +210,6 @@ h3 {
 
 /* ===== Página de Eventos ===== */
 
-/* Limita y centra el bloque completo del próximo evento */
-
-
 /* La imagen ocupa el ancho del bloque */
 .imagen-proximo-evento {
     display: block;

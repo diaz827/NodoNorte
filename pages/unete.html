@@ -16,7 +16,8 @@
 
 <body class="d-flex flex-column min-vh-100">
     <!-- El header ocupa todo el ancho y organiza directamente el logo y el menú.
-         flex-column los coloca en columna; flex-sm-row, en fila desde sm (576px).
+         flex-column coloca el logo y el menú en columna por debajo de 576px.
+         flex-sm-row los coloca en fila desde 576px.
          justify-content-between los separa a ambos lados cuando están en fila.
          gap-3 los separa 1rem y align-items-center los centra en el eje transversal.
          px-3 añade 1rem de espacio interior lateral; px-sm-5 lo amplía a 3rem desde sm.
@@ -75,14 +76,15 @@
         </section>
     </main>
     <!-- d-flex activa la distribución flexible.
-     flex-column coloca los bloques en columna en pantallas menores de 576px.
-     flex-sm-row los coloca en fila desde 576px.
+     flex-column coloca los bloques en columna en pantallas menores de 768px.
+     flex-md-row coloca los bloques en fila desde 768px.
      gap-3: deja 1rem entre bloques.
      px-3: espacio interior lateral de 1rem.
      px-sm-5: desde 576px, el espacio lateral pasa a 3rem.
-     py-4: espacio interior de 1.5rem arriba y abajo. -->
+     py-4: espacio interior de 1.5rem arriba y abajo.
+     text-center centra el texto; text-md-start lo alinea a la izquierda desde 768px -->
     <footer
-        class="container-fluid d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 px-3 px-sm-5 py-4">
+        class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 px-3 px-sm-5 py-4 text-center text-md-start">
         <!-- Agrupa el logo y la autoría.
      mb-0 elimina el margen inferior del párrafo. -->
         <p class="mb-0">
@@ -90,8 +92,9 @@
                 <img src="../img/logos/completo/logo-completo-oscuro.svg" alt="Nodo Norte - Comunidad tecnológica">
             </a>
             <!-- d-block coloca la autoría debajo del logo.
-     mt-2 añade una separación superior de 0.5rem. -->
-            <span class="d-block mt-2 fw-semibold">&copy; 2026
+     mt-2 añade una separación superior de 0.5rem.
+     text-nowrap mantiene la autoría en una sola línea, sin saltos. -->
+            <span class="d-block mt-2 fw-semibold text-nowrap">&copy; 2026
                 <a href="https://www.linkedin.com/in/danidiazcanosa/" target="_blank" rel="noopener noreferrer"
                     class="link-light fw-bold link-underline-opacity-0 link-underline-opacity-100-hover">Dani</a>
                 &amp;
@@ -122,6 +125,7 @@
             </a>
         </nav>
     </footer>
+
     <div class="modal fade" id="modalSocio" tabindex="-1" aria-labelledby="tituloSocio" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
             <form class="modal-content" id="formSocio" novalidate>
