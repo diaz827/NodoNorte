@@ -75,6 +75,17 @@ header nav a:not(.enlace-unete):hover {
     background-size: 100% 2px;
 }
 
+/* Mantiene subrayado el enlace de la página actual */
+header nav a[aria-current="page"] {
+    background-size: 100% 2px;
+}
+
+/* Destaca Únete con fondo blanco cuando es la página actual */
+header nav .enlace-unete[aria-current="page"] {
+    background-color: white;
+    color: var(--color-principal);
+}
+
 /* rellenar de blanco y cambiar el texto a turquesa*/
 header nav .enlace-unete:hover {
     background-color: white;

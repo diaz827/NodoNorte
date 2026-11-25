@@ -15,24 +15,32 @@
 </head>
 
 <body>
-    <!-- El header ocupa todo el ancho y organiza directamente el logo y el menú.
-         flex-column coloca el logo y el menú en columna por debajo de 576px.
-         flex-sm-row los coloca en fila desde 576px.
-         justify-content-between los separa a ambos lados cuando están en fila.
-         gap-3 los separa 1rem y align-items-center los centra en el eje transversal.
-         px-3 añade 1rem de espacio interior lateral; px-sm-5 lo amplía a 3rem desde sm.
-         py-3 añade 1rem de espacio interior arriba y abajo. -->
-    <header
-        class="container-fluid d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 px-3 px-sm-5 py-3">
+    <!-- Menú desplegable en móvil y horizontal desde md (768px).
+     El tema oscuro permite ver el botón del menú sobre el fondo turquesa. -->
+    <header class="navbar navbar-expand-md px-3 px-sm-5 py-3" data-bs-theme="dark">
+
         <a href="index.html" class="marca">
             <img src="img/logos/completo/logo-completo-oscuro.svg" alt="Nodo Norte - Comunidad tecnológica">
         </a>
 
-        <!-- Enlaces en fila, separados por 1rem (gap-3) y centrados verticalmente. -->
-        <nav class="d-flex gap-3 align-items-center">
-            <a href="index.html">Inicio</a>
-            <a href="pages/eventos.html">Eventos</a>
-            <a href="pages/unete.html" class="enlace-unete">Únete</a>
+        <!-- Abre y cierra el menú con el JavaScript de Bootstrap -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir o cerrar el menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Zona que se oculta en móvil -->
+        <nav class="collapse navbar-collapse justify-content-md-end" id="menuPrincipal"
+            aria-label="Navegación principal">
+
+            <!-- Enlaces en columna en móvil y en fila desde md -->
+            <div class="navbar-nav gap-3 align-items-center py-3 py-md-0">
+                <a href="index.html" class="fw-bold" aria-current="page">
+                    Inicio
+                </a>
+                <a href="pages/eventos.html">Eventos</a>
+                <a href="pages/unete.html" class="enlace-unete">Únete</a>
+            </div>
         </nav>
     </header>
 
