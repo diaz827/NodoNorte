@@ -127,7 +127,7 @@ Al ser un equipo de dos personas, compartimos las tareas de organización y segu
 
 Las fichas de la práctica (información del cliente, páginas y Product Backlog) están en [`docs/fichasPracticas/`](docs/fichasPracticas/).
 
-**Tablero del proyecto (GitHub Projects):** [ENLACE AL TABLERO]
+**Tablero del proyecto (GitHub Projects):** https://diaz827.github.io/NodoNorte
 
 ## Diseño
 
