@@ -51,7 +51,7 @@ La web tiene tres páginas. Los formularios no son páginas aparte: se abren com
 | Página | Archivo | Contenido |
 |---|---|---|
 | Inicio | `index.html` | Hero «Sobre nosotros», próximo evento, preguntas frecuentes (acordeón) y formulario de inscripción al evento |
-| Eventos | `pages/eventos.html` | Próximo evento, calendario, ponentes y ediciones anteriores con fotos y diapositivas |
+| Eventos | `pages/eventos.html` | Próximo evento, formulario de inscripción, calendario y seis eventos anteriores con información y enlaces provisionales a imágenes y diapositivas |
 | Únete | `pages/unete.html` | Tarjetas para hacerse socio o proponer una charla, con un formulario para cada una |
 
 ### Formularios
@@ -82,6 +82,7 @@ Los niveles se distinguen por color: **inicial** (verde), **medio** (amarillo) y
 - **Dónde:** Universidad
 - **Ponente:** Lucía Varela, desarrolladora de software libre
 - **Nivel:** inicial
+- **Aforo:** 60 plazas
 
 ### Eventos anteriores
 
@@ -89,7 +90,7 @@ Los niveles se distinguen por color: **inicial** (verde), **medio** (amarillo) y
 |---|---|---|---|---|
 | 3 mar 2026 · 18:30 | [Diseño UX: prototipa en una hora](img/tarjetas/marzo_3.png) | Sara Méndez, diseñadora UX/UI | Wekco | Inicial |
 | 7 abr 2026 · 18:30 | [Docker desde cero: tu primer contenedor](img/tarjetas/abril_7.png) | Brais Otero, administrador de sistemas | Universidad | Medio |
-| 5 may 2026 · 18:30 | [Bootstrap 5: tu primera web](img/tarjetas/mayo_5.png) | Martín Rey y Diego Seoane, desarrolladores front-end | Universidad | Inicial |
+| 5 may 2026 · 18:30 | [Bootstrap 5: tu primera web](img/tarjetas/mayo_5.png) | Daniel Díaz y Francisco Puñal, estudiantes de DAW | Universidad | Inicial |
 | 1 sep 2026 · 18:30 | [Python: automatiza lo aburrido](img/tarjetas/septiembre_1.png) | Noa Castro, estudiante de DAM | Singular | Inicial |
 | 6 oct 2026 · 18:30 | [Seguridad web: el OWASP Top 10](img/tarjetas/octubre_6.png) | Iria Fernández, especialista en seguridad web | Singular | Avanzado |
 | 3 nov 2026 · 18:00 | [Accesibilidad web en una tarde](img/tarjetas/noviembre_3.png) (obradoiro) | Andrés Pazos, diseñador web y accesibilidad | Wekco | Medio |
@@ -121,6 +122,8 @@ Los niveles se distinguen por color: **inicial** (verde), **medio** (amarillo) y
 | Sprint 2 | Francisco Puñal y Daniel Díaz | Web completa de Nodo Norte, con las tres páginas, los formularios y los componentes, validada, responsive y accesible, lista para entregar. |
 
 **Product Goal:** que un estudiante de FP o universidad entre en la web de Nodo Norte desde el móvil y, en pocos minutos, encuentre el próximo evento y se apunte, se haga socio o proponga una charla.
+
+Al ser un equipo de dos personas, compartimos las tareas de organización y seguimiento y acordamos juntos el reparto del trabajo.
 
 Las fichas de la práctica (información del cliente, páginas y Product Backlog) están en [`docs/fichasPracticas/`](docs/fichasPracticas/).
 
@@ -202,7 +205,7 @@ NodoNorte/
 |---|---|
 | HTML5 | Estructura semántica: `header`, `nav`, `main`, `section` y `footer` |
 | CSS3 | Estilos propios en `css/estilos.css` |
-| Bootstrap 5.3 (CDN oficial) | Rejilla responsive y componentes: navbar, cards, acordeón, modales, toasts, formularios y botones |
+| Bootstrap 5.3 (CDN oficial) | Rejilla responsive y componentes: navbar, cards, acordeón, modales, toasts, formularios, botones y tabla de próximos eventos |
 | Bootstrap Icons | Iconos |
 | JavaScript | Validación de los formularios y aviso de envío en `js/validacion.js` |
 | Git y GitHub | Control de versiones |
@@ -217,8 +220,9 @@ NodoNorte/
 - [x] Tarjetas de los eventos
 - [x] Páginas de Inicio y Únete con Bootstrap
 - [x] Formularios con validación
-- [ ] Página de Eventos, navbar y footer
-- [ ] Validación W3C, responsive y accesibilidad
+- [x] Página de Eventos, navbar y footer
+- [x] Validación HTML con W3C y comprobaciones responsive y de navegación con teclado
+- [x] Revisión del contraste de los colores principales del CSS
 
 ## Cómo ver el proyecto
 
