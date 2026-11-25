@@ -216,4 +216,15 @@ h3 {
     width: 100%;
 }
 
+/* Fondo blanco de las tarjetas de eventos anteriores */
+.tarjeta-anterior {
+    background-color: white;
+}
+
+/* Títulos y enlaces de las tarjetas con el color principal */
+.tarjeta-anterior h3,
+.tarjeta-anterior a {
+    color: var(--color-principal);
+}
+
 /* ===== Fin de estilos de Eventos ===== */
