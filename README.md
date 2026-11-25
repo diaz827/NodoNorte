@@ -89,7 +89,7 @@ Los niveles se distinguen por color: **inicial** (verde), **medio** (amarillo) y
 |---|---|---|---|---|
 | 3 mar 2026 · 18:30 | [Diseño UX: prototipa en una hora](img/tarjetas/marzo_3.png) | Sara Méndez, diseñadora UX/UI | Wekco | Inicial |
 | 7 abr 2026 · 18:30 | [Docker desde cero: tu primer contenedor](img/tarjetas/abril_7.png) | Brais Otero, administrador de sistemas | Universidad | Medio |
-| 5 may 2026 · 18:30 | [Bootstrap 5: tu primera web](img/tarjetas/mayo_5.png) | Martín Rey y Diego Seoane, desarrolladores front-end | Universidad | Inicial |
+| 5 may 2026 · 18:30 | [Bootstrap 5: tu primera web](img/tarjetas/mayo_5.png) | Daniel Díaz y Francisco Puñal, desarrolladores front-end | Universidad | Inicial |
 | 1 sep 2026 · 18:30 | [Python: automatiza lo aburrido](img/tarjetas/septiembre_1.png) | Noa Castro, estudiante de DAM | Singular | Inicial |
 | 6 oct 2026 · 18:30 | [Seguridad web: el OWASP Top 10](img/tarjetas/octubre_6.png) | Iria Fernández, especialista en seguridad web | Singular | Avanzado |
 | 3 nov 2026 · 18:00 | [Accesibilidad web en una tarde](img/tarjetas/noviembre_3.png) (obradoiro) | Andrés Pazos, diseñador web y accesibilidad | Wekco | Medio |
