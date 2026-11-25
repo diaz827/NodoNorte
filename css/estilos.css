@@ -178,6 +178,11 @@ h3 {
     font-weight: 700;
 }
 
+/* Enlace del FAQ con contraste suficiente sobre el fondo claro */
+.accordion-body a {
+    color: var(--color-principal);
+}
+
 .form-control:focus,
 .form-select:focus {
     border-color: var(--color-principal);
@@ -225,6 +230,12 @@ h3 {
 .tarjeta-anterior h3,
 .tarjeta-anterior a {
     color: var(--color-principal);
+}
+
+/* Cabecera del calendario con fondo blanco y texto turquesa */
+.calendario-eventos thead {
+    --bs-table-bg: white;
+    --bs-table-color: var(--color-principal);
 }
 
 /* ===== Fin de estilos de Eventos ===== */

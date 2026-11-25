@@ -72,6 +72,31 @@
                 </p>
             </article>
 
+            <!-- Calendario de próximos eventos -->
+            <h2 class="mt-5 mb-3">Calendario de próximos eventos</h2>
+            <!-- Permite desplazar la tabla horizontalmente si no cabe en móvil -->
+            <div class="table-responsive">
+                <!-- Filas alternas y resaltado al pasar el ratón -->
+                <table class="table table-striped table-hover align-middle text-center mb-0 calendario-eventos">
+                    <thead>
+                        <tr>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Hora</th>
+                            <th scope="col">Evento</th>
+                            <th scope="col">Lugar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 de diciembre de 2026</td>
+                            <td>18:30</td>
+                            <td>Git sin miedo: tu primer pull request</td>
+                            <td>Universidad</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </section>
 
         <!-- Eventos anteriores sobre el mismo fondo que el FAQ -->
@@ -298,7 +323,8 @@
         </nav>
     </footer>
 
-    <div class="modal fade" id="modalInscripcion" tabindex="-1" aria-labelledby="tituloInscripcion" aria-hidden="true">
+    <div class="modal fade" id="modalInscripcion" tabindex="-1" role="dialog" aria-labelledby="tituloInscripcion"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
             <form class="modal-content" id="formInscripcion" novalidate>
                 <header class="modal-header">
