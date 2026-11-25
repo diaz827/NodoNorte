@@ -243,7 +243,8 @@ h3 {
     color: var(--color-principal);
 }
 
-/* Cabecera del calendario con fondo blanco y texto turquesa */
+/* Variables de Bootstrap cambian el fondo y el texto
+   de las celdas del encabezado de la tabla. */
 .calendario-eventos thead {
     --bs-table-bg: white;
     --bs-table-color: var(--color-principal);

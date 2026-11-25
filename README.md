@@ -125,9 +125,9 @@ Los niveles se distinguen por color: **inicial** (verde), **medio** (amarillo) y
 
 Al ser un equipo de dos personas, compartimos las tareas de organización y seguimiento y acordamos juntos el reparto del trabajo.
 
-Las fichas de la práctica (información del cliente, páginas y Product Backlog) están en [`docs/fichasPracticas/`](docs/fichasPracticas/).
+Las fichas completas de la práctica están en [Fichas de la práctica (PDF)](docs/fichas-practica.pdf).
 
-**Tablero del proyecto (GitHub Projects):** https://diaz827.github.io/NodoNorte
+**Web publicada:** [Ver Nodo Norte](https://diaz827.github.io/NodoNorte/)
 
 ## Diseño
 
@@ -209,7 +209,6 @@ NodoNorte/
 | Bootstrap Icons | Iconos |
 | JavaScript | Validación de los formularios y aviso de envío en `js/validacion.js` |
 | Git y GitHub | Control de versiones |
-| GitHub Projects | Tablero Scrum (Por hacer, En curso, Hecho) |
 
 ## Estado del proyecto
 
